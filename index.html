@@ -16,8 +16,8 @@
             const data = JSON.parse(text.substr(47).slice(0, -2));
             
             // Trouve la ligne correspondant à la référence
-            const row = data.table.rows.find(row => row.c[5].v === ref); // Colonne "Référence"
-            const status = row ? row.c[6].v : "Non trouvé"; // Colonne "Statut"
+            const row = data.table.rows.find(row => row.E[5].v === ref); // Colonne "Référence"
+            const status = row ? row.G[6].v : "Non trouvé"; // Colonne "Statut"
             
             document.getElementById('status').innerText = `Statut : ${status}`;
         }
